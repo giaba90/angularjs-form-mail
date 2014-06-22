@@ -3,7 +3,7 @@
 $data = file_get_contents("php://input");
 $objData = json_decode($data);
 // insert your email into $to variable
-$to      = 'gianlucabarranca@gmail.com';
+$to      = ' ';
 //this variable are necessary for the sending of e-mail
 $from 	 = $objData->email ;
 $subject = $objData->subject ;
