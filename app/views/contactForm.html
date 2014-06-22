@@ -1,0 +1,31 @@
+<h2>Form Mail in Angularjs &amp; Php</h2>
+<div class="row">
+	<div class="center-block">
+	<div class="col-lg-6">
+<form name="form" ng-submit="submit()" ng-controller="MyCtrl">
+	<div class="form-group">
+    	<label for="email">Your email address</label>
+    	<input type="email" class="form-control"  ng-model="form.mail" required placeholder="Enter email" autofocus>
+  </div>
+<div class="form-group">
+	<label for="subject">Subject</label>
+	<input type="text" class="form-control" ng-model="form.subject" required placeholder="Enter the subject">
+</div>
+<div class="form-group">
+	<label for="msg">Message</label>
+	<textarea class="form-control" rows="3" ng-model="form.msg" required placeholder="Insert the message"></textarea>
+</div>
+ <div class="input-group">
+      <div class="input-group-btn">
+		<button type="submit" class="btn btn-default" >Submit</button>
+	</div>
+</div>
+ </form>
+<!-- the code below is for debug mode -->
+<div style="margin-top:15px">
+<p>HTTP STATUS: {{status}}</p>
+<p>ESITO INVIO EMAIL: {{data.text}}</p>
+</div> <!-- close debug div -->
+</div>
+</div><!-- close row -->
+</div><!-- close  center-block -->
